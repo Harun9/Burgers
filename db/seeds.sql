@@ -1,5 +1,5 @@
 
-USE burgers_db;
+USE burger_db;
 insert into burger
   (burger_name)
 values

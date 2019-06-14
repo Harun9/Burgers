@@ -15,7 +15,7 @@ var orm = {
 
   selectAll: function (callback) {
 
-    connection.query('SELECT * FROM burgers', function (err, result) {
+    connection.query('SELECT * FROM burger', function (err, result) {
       if (err) throw err;
       callback(result);
     });
@@ -59,7 +59,7 @@ var orm = {
     }
     timestamp += second;
 
-    connection.query('INSERT INTO burgers SET ?', {
+    connection.query('INSERT INTO burger SET ?', {
       burger_name: burger_name,
       devoured: false,
       date: timestamp
@@ -74,7 +74,7 @@ var orm = {
   updateOne: function (burgerID, callback) {
 
 
-    connection.query('UPDATE burgers SET ? WHERE ?', [{ devoured: true }, { id: burgerID }], function (err, result) {
+    connection.query('UPDATE burger SET ? WHERE ?', [{ devoured: true }, { id: burgerID }], function (err, result) {
       if (err) throw err;
       callback(result);
     });
