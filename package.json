@@ -1,17 +1,18 @@
 {
-  "name": "burgers",
+  "name": "Burgers",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Harun9/Burgers.git"
   },
-  "author": "harun",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Harun9/Burgers/issues"
@@ -21,7 +22,8 @@
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
+    "handlebars": "^4.7.3",
     "method-override": "^3.0.0",
-    "mysql": "^2.17.1"
+    "mysql": "^2.18.1"
   }
 }
